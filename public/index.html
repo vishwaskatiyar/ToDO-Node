@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Scheduler</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Task Scheduler</h1>
+        <form id="taskForm">
+            <input type="text" id="taskName" placeholder="Task Name" required>
+            <input type="text" id="taskSchedule" placeholder="Cron Schedule (e.g., * * * * *)" required>
+            <select id="taskStatus">
+                <option value="active">Active</option>
+                <option value="inactive">Inactive</option>
+            </select>
+            <button type="submit">Add Task</button>
+        </form>
+        <h2>Tasks</h2>
+        <table id="taskTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Schedule</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Task rows will be inserted here dynamically -->
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
